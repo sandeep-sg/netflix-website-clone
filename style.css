@@ -1,0 +1,371 @@
+@font-face {
+  font-family: netflix-font;
+  src: url(NetflixSans_W_Blk.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: netflix-font;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+h1,
+h2,
+h3,
+p {
+  color: white;
+  font-weight: 100;
+}
+
+.pointer {
+  cursor: pointer;
+  color: #fff;
+}
+input[type="email"] {
+  border: 2px solid #aaa;
+}
+.section-1 {
+  background-color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/f85718e8-fc6d-4954-bca0-f5eaf78e0842/ea44b42b-ba19-4f35-ad27-45090e34a897/IN-en-20230918-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+  background-size: 100%;
+  background-position: center;
+  height: 700px;
+  position: relative;
+}
+
+header {
+  padding: 28px 190px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo svg {
+  width: 148px;
+  height: 40px;
+  color: rgb(229, 9, 20);
+  fill: currentColor;
+  display: block;
+}
+
+.btns {
+  display: flex;
+}
+.btns .lang {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: none;
+
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.btns .sign-in {
+  background: red;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.section-1 .features {
+  margin: 180px 0;
+}
+.para h1 {
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -2px;
+}
+.para p {
+  text-align: center;
+}
+.para .first-para {
+  font-size: 24px;
+  margin: 23px 0;
+}
+.para .sec-para {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.login-form {
+  display: flex;
+  justify-content: center;
+}
+.login-form input[type="email"] {
+  padding: 10px;
+  width: 25%;
+
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 18px;
+  background: transparent;
+}
+.login-form button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  background: red;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* .......................................all section container....................................................... */
+
+.container {
+  width: 100%;
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 8.5px solid #222;
+  padding: 60px 180px;
+}
+.container .para {
+  width: 50%;
+}
+.container .video-img {
+  width: 50%;
+}
+.video-img img {
+  width: 500px;
+}
+.container h1 {
+  text-align: left;
+  padding: 20px 0;
+}
+.container p {
+  text-align: left;
+  font-size: 24px;
+}
+/* ............................netflix-ques....................................... */
+.netflix-ques {
+  border-top: 8px solid #333;
+}
+.netflix-ques h1 {
+  text-align: center;
+  font-size: 48px;
+  margin: 70px 0 30px;
+}
+
+.netflix-ques .drop-down {
+  width: 75%;
+  margin: auto;
+}
+.drop-down label {
+  background: #333;
+  color: #fff;
+  display: block;
+  margin-top: 10px;
+  padding: 32px;
+  font-size: larger;
+  cursor: pointer;
+
+  position: relative;
+  transition: all 0.3s;
+}
+.drop-down label::after {
+  content: "+";
+  position: absolute;
+  right: 25px;
+  top: 13px;
+  font-size: 50px;
+  transition: all 0.5s;
+}
+.drop-down label:hover {
+  background: #444;
+}
+.drop-down input[type="checkbox"] {
+  display: none;
+}
+.drop-down .stud-name {
+  background: #222;
+  color: #fff;
+  padding: 0 15px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all  .7s ease;
+}
+
+.drop-down input[type="checkbox"]:checked + label + .stud-name {
+  max-height:900px ;
+  padding: 15px;
+ 
+}
+.drop-down input[type="checkbox"]:checked + label::after {
+  transform: rotate(135deg);
+}
+.netflix-ques .form-container {
+  padding: 40px 0 60px;
+}
+.netflix-ques h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+.form-container p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+/* .........................footer................................................. */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 8px solid #333;
+  padding: 80px 200px;
+}
+.footer-flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 200px;
+}
+.footer-flex ul li {
+  list-style-type: none;
+  margin-top: 9px;
+}
+.footer-flex ul li a {
+  font-size: 14px;
+  color: #ffffffb3;
+  cursor: pointer;
+}
+
+/* .........................................media quarry ............................ */
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 25px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo svg {
+    width: 90px;
+    height: 30px;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+  }
+  .btns .lang {
+    padding: 4px 5px;
+  }
+  .btns .lang span {
+    display: none;
+  }
+  .btns button {
+    padding: 5px 10px;
+  }
+
+  .section-1 {
+    height: 500px;
+  }
+  .section-1 .features {
+    margin: 60px 0;
+  }
+  .section-1 .para h1 {
+    font-size: 28px;
+    margin: 0 20px;
+    letter-spacing: 0.2px;
+  }
+  .section-1 .para p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .container {
+    flex-direction: column;
+    gap: 10px;
+    border-top: 8.5px solid #222;
+    padding: 50px 0;
+  }
+  .container .para {
+    width: 90%;
+  }
+  .container .video-img {
+    width: 100%;
+  }
+  .container h1 {
+    text-align: center;
+    padding: 20px auto;
+    font-size: 27px;
+    letter-spacing: 1px;
+  }
+  .container p {
+    text-align: center;
+    font-size: 17px;
+  }
+  .container img {
+    width: 80vw;
+    margin: 20px auto;
+    display: block;
+  }
+  .section-3,
+  .section-5 {
+    flex-direction: column-reverse;
+  }
+  .login-form {
+    flex-direction: column;
+  }
+  .login-form input[type="email"] {
+    width: 80%;
+
+    margin: auto;
+  }
+
+  .netflix-ques h1 {
+    font-size: 31px;
+  }
+  .netflix-ques .drop-down {
+    width: 85vw;
+  }
+  .drop-down label {
+    font-size: large;
+    padding: 20px;
+  }
+  .drop-down label::after {
+    font-size: 30px;
+  }
+
+  .login-form button {
+    font-size: 1rem;
+    margin: 20px auto;
+  }
+  .login-form svg {
+    width: 18px;
+  }
+  .form-container p {
+    margin: 10px 40px;
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 8px solid #333;
+    padding: 17px;
+  }
+  .footer-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
